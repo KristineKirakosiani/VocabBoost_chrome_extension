@@ -1,17 +1,21 @@
 {
-    "manifest_version": 3,
-    "name": "hug",
-    "version": "1.0",
-    
-    "description": "My first attempt at creating a Chrome add-on",
-    
-    "content_scripts": [ {
-        "matches": ["<all_urls>"],
-        "js": ["index.js"]
-      } ],
+  "manifest_version": 3,
+  "name": "hug",
+  "version": "1.0",
 
-      "action": {
-        "default_popup": "index.html"
-      }
+  "description": "My first attempt at creating a Chrome add-on",
 
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
     }
+  ],
+
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "128": "img/icon-128.png"
+  }
+}

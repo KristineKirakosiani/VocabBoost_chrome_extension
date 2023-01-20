@@ -1,10 +1,19 @@
 let btn = document.querySelector("#btn")
-let input = document.querySelector("#input").value
 
 function getValue () {
-    input = document.querySelector("#input").value
-    console.log(input)
+   let value = document.querySelector("#input").value
+   let input =  value
+    // send the data to php with ajax
+    $.ajax({
+      type: 'POST',
+      url: 'http://localhost:8888/hug/post.php',
+      data: input,
+      success: function(data) {
+        //success code
+        console.log(data)
+      }
+    })
 }
 
 
-btn.addEventListener('click', getValue)
+btn.addEventListener('click', getValue);

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "VocaBBoost",
+  "version": "1.0",
+
+  "description": "In order to boost your vocabulary learn at leat one word once a day!",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+  }
+}

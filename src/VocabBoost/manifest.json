@@ -1,33 +1,18 @@
 {
-    "name": "Vocaboost",
-    "version": "1.0.0",
-    "description": "Upgrade your languages skills !",
-    "manifest_version": 3,
-    "author": "klervy, kristine, audrey",
-    "action":{
-        "default_popup": "index.html",
-        "default_title": "VOCABOOST"
-    },
-        "content_scripts": [
-            {
-                "matches": [
-                    "<all_urls>"
-                ],
-                "css": [
-                    "/index.css"
-                ]
-            }
-        ],
-        "web_accessible_resources": [
-            {
-                "resources": [
-                    "/assets/*",
-                    "/index.html"
-                ],
-                "matches": [
-                    "<all_urls>"
-                ]
-            }
-        ],
-        "options_page": "index.html"
-        }
+  "name": "Vocaboost",
+  "version": "1.0.0",
+  "description": "Upgrade your languages skills !",
+  "manifest_version": 3,
+  "author": "klervy, kristine, audrey",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "VOCABOOST"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/parcel-bundler/*"],
+      "js": ["scripts/index.js"]
+    }
+  ],
+  "host_permissions": ["*://*.wiktionary.org/*"]
+}

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "requirejs": "^2.3.6",
     "word-definition": "^2.1.6"
   },
   "devDependencies": {

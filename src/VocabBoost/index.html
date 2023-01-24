@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=in, initial-scale=1.0">
-    <title>VOCABOOST</title>
+    <link rel="stylesheet" href="index.css">
+    <title>VocabBoost</title>
 </head>
 <body>
-    <label for="pet-select">Choose language:</label>
-    <input type="text" id="chosenLanguage">
+    <div id="firstPage">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <div class="logo">
+            <img src="images/vocabboost_logo.jpg"
+                 alt="VocabBoost one word at the time">
+        </div>
+        <div>
+        <p>VocabBoost is a tool to help you learn vocabulary in English(en), in French(fr) and in German(de).</p>
+        </div>
+    </div>  
 
-    <input type="text" id="input"> <br>
-    <button id="btn"> submit </button> <br>
+    <label for="languageInput">CHOOSE LANGUAGE:</label>
+    <div class="scrollBar">
+        <input type="text" id="chosenLanguage">
+    </div> <br>
+    
+    <label for="input1">WRITE A WORD :</label>
+    <div>
+        <input type="text" id="input" class="inputword">
+    </div>
+
+    <p>Your word definition will appear here !</p>
+    <div>
+        <blockquote id="output" class="definition"></blockquote>
+    </div>
+
+    <div>
+        <button id="btn"> GO </button> <br>
+        <!-- <p id="output"></p> -->
+    </div>
+
     <script type="module" src="scripts/index.js"></script> <br>
-    <p id="output"></p>
 </body>
 </html>

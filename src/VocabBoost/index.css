@@ -59,3 +59,18 @@ p {
     height: 25px;
 
 }
+
+.btn_switch{
+    position: absolute;
+    left : 258px;
+    top : 10px
+
+
+}
+
+#firstPage{
+    display: block;
+}
+#random_word_page{
+    display: none;
+}

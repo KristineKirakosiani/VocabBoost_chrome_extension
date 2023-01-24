@@ -1,5 +1,8 @@
 let myButton = document.querySelector("#btn_translate")
 let outputBox = document.querySelector("#pop_definition")
+let firstPage = document.getElementById("firstPage")
+let random_word_page = document.getElementById("random_word_page")
+let btn_switch = document.getElementById("btn_switch")
 
 
 function pop_a_word(word, language) {
@@ -52,4 +55,16 @@ function show_random_word(){
   });
 
 }
-show_random_word()
+
+function switch_between_pages(){
+  btn_switch.addEventListener("click", function () {
+    if(getComputedStyle(firstPage).display != "none"){
+      firstPage.style.display = "none";
+      random_word_page.style.display = "block";
+    } else {
+      firstPage.style.display = "block";
+      random_word_page.style.display = "none";
+    }
+  });
+}
+switch_between_pages()

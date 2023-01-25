@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>VOCAbBOOST</title>
+  </head>
+  <body>
+    <input type="button" id="btn_switch" class="btn_switch" />
+    <div class="page" id="firstPage">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+      <div class="logo">
+        <img
+          src="images/vocabboost_logo.jpg"
+          alt="VocabBoost one word at the time"
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <p>Choose a language and write a word:</p>
+        <!--<div class="scrollBar">-->
+        <select name="languages" id="chosenLanguage" class="select">
+          <option value="fr">fr</option>
+          <option value="en">en</option>
+          <option value="de">de</option>
+        </select>
+        <input type="text" id="input_word" class="input">
+      </div>
+      <br />
+
+      <div>
+        <p>Your word definition will appear here !</p>
+        <blockquote id="pop_definition" class="definition"></blockquote>
+      </div>
+
+      <div>
+        <br />
+        <button class="btn" id="btn_translate">GO</button> <br />
+      </div>
+    </div>
+
+    <div id="random_word_page" class="page">
+      <div class="logo">
+        <img
+          src="images/vocabboost_logo.jpg"
+          alt="VocabBoost one word at the time"
+        />
+      </div>
+      <div>
+        <p>We have a new word for you :</p>
+        <blockquote id="random_word"></blockquote>
+      </div>
+      <div>
+        <p>What is it?</p>
+        <blockquote id="random_def"></blockquote>
+      </div>
+      <div>
+        <br />
+
+        <button class="btn" id="btn_random">GO</button>
+      </div>
+    </div>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

@@ -1,8 +1,13 @@
+// get elements from html page 
+
 let myButton = document.querySelector("#btn_translate");
 let outputBox = document.querySelector("#pop_definition");
 let firstPage = document.getElementById("firstPage");
 let random_word_page = document.getElementById("random_word_page");
 let btn_switch = document.getElementById("btn_switch");
+
+
+// function that allows to get definition. It takes the word and the language parameters and shows in first page of html 
 
 function pop_a_word(word, language) {
   let wd = require("word-definition");
@@ -10,6 +15,8 @@ function pop_a_word(word, language) {
     outputBox.innerHTML = definition.definition;
   });
 }
+
+// this function on click of the btn gets written word and selected language and passes this arguments to the function pop_a_word
 
 function get_input_word() {
   myButton.addEventListener("click", function () {
@@ -19,6 +26,8 @@ function get_input_word() {
   });
 }
 get_input_word();
+
+// words to get by chance with math random function
 
 let array_word = [
   "time",
@@ -60,6 +69,10 @@ function show_random_word(){
     }, 6000);
 
 }*/
+
+
+// this function gets a random word element from the array and prints it in output box
+
 function show_random_word() {
   document.querySelector("#btn_random").addEventListener("click", function () {
     var randomElement =
@@ -74,6 +87,9 @@ function show_random_word() {
   });
 }
 show_random_word();
+
+
+
 function switch_between_pages() {
   btn_switch.addEventListener("click", function () {
     if (getComputedStyle(firstPage).display != "none") {

@@ -1,4 +1,4 @@
-# Projet_Collectif_VocabBoost 
+# VocabBoost 
 
 VocabBoost is a chrome extension that allows you to find word definition in English, French and German. 
 
